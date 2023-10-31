@@ -1,0 +1,114 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('../images/banner_personal.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilos para el header */
+.header {
+    /* Otros estilos del header */
+    color: #fff;
+    display: flex; /* Mostrar elementos en línea */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para el menú de navegación */
+.header-nav ul {
+    display: flex;
+    align-items: center ;
+    list-style: none;
+    padding: 0;
+}
+
+.header-nav-item {
+    /* Elimina display: block; para mostrar elementos en línea */
+    margin-right: 10px; /* Ajusta el margen derecho entre los elementos */
+}
+
+.header-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Estilos adicionales (opcional) para el menú de navegación en línea */
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav-item:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+/* Estilos para los elementos de navegación en estado normal */
+.header-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Estilos para los elementos de navegación al pasar el mouse por encima */
+.header-nav-link:hover {
+    color: #ff9900; /* Cambia el color al pasar el mouse por encima (puedes ajustar este color) */
+    text-decoration: none; /* Subraya el enlace al pasar el mouse por encima (opcional) */
+}
+
+.button {
+    max-width: 5em;
+    display: flex;
+    flex-direction: column;
+    margin: 71%;
+    margin-top: 10vh;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    box-shadow: 8px 8px 20px #acacac, -8px -8px 20px white;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+}
+
+.button a {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: -5px -5px -10px #acacac, 5px 5px 10px white;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+    transform: rotateX(5deg) rotateY(45deg); /* Aplica inclinación en los ejes X e Y */
+    transition: box-shadow 0.1s; /* Agrega una transición suave a la sombra */
+
+}
+
+
+
+.button a:active {
+    box-shadow: -2px -2px 10px #acacac inset, 2px 2px 5px white inset;
+    transform: translateY(2px) rotateX(5deg) rotateY(50deg); /* Desplazar el icono y mantener la perspectiva */
+
+}
+
+main {
+    margin-bottom: 50px; /* Agrega un margen inferior para dejar espacio al pie de página */
+}
+
+/* Estilos para el footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Opcional: para asegurarte de que el pie de página ocupe todo el ancho */
+    /* background-color: #333; */
+    color: #fff;
+    padding: 10px;
+}
+
+
